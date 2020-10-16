@@ -1,0 +1,17 @@
+<suite name="Suite" parallel="none">
+  <test name="Test">
+    <groups>
+     
+       <run>
+            
+            <include name="Smoke" />
+            <exclude name="Regression"/>
+             
+       </run>
+     
+    </groups>
+    <classes>
+      <class name="SeleniumWebdriverExample.GroupsExamples"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

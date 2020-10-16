@@ -1,0 +1,12 @@
+<suite name="Sample Suite">
+  <test name="testing">
+  	<groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+       <class name="SeleniumWebdriverExample.GroupsExamples" />
+    </classes>
+  </test>
+</suite>

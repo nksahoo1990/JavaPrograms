@@ -1,0 +1,20 @@
+<suite name="Parallel test suite" parallel="tests">
+  <test name="Firefox Test">
+  <parameter name="browser" value="FF"/>
+    <classes>
+      <class name="SeleniumWebdriverExample.ParallelExecution"/>
+    </classes>
+  </test>
+  <test name="Chrome Test">
+  <parameter name="browser" value="GC"/>
+    <classes>
+      <class name="SeleniumWebdriverExample.ParallelExecution"/>
+    </classes>
+  </test>
+    <test name="Internet Explorer Test">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="SeleniumWebdriverExample.ParallelExecution"/>
+    </classes>
+  </test>
+</suite>

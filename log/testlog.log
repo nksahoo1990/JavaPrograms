@@ -1,0 +1,6 @@
+2017-02-03 21:43:14,144 - log4j -INFO - Browser Opened
+2017-02-03 21:43:19,936 - log4j -INFO - Navigated to Google
+2017-02-03 21:43:21,062 - log4j -INFO - Browser closed
+2017-02-03 21:45:12,024 - log4j -INFO - Browser Opened
+2017-02-03 21:45:20,441 - log4j -INFO - Navigated to Google
+2017-02-03 21:45:21,347 - log4j -INFO - Browser closed
