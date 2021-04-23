@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RestAssuredPractice.AddBookLibrary_StaticJson">
+      <class name="SeleniumWebdriverExample.GoogleChromeTest">
         <methods>
-          <include name="addBook"/>
+          <include name="GCTest"/>
         </methods>
-      </class> <!-- RestAssuredPractice.AddBookLibrary_StaticJson -->
+      </class> <!-- SeleniumWebdriverExample.GoogleChromeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
