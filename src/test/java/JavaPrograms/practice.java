@@ -2,6 +2,7 @@ package JavaPrograms;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class practice {
 
@@ -9,39 +10,22 @@ public class practice {
 		// TODO Auto-generated method stub
 
 		
-//		int numbers[] = new int[]{32,43,53,54,32,65,63,98,43,23};
-//        int smallest = numbers[0];
-//        int largetst = numbers[0];
-//       
-//        for(int i=1; i< numbers.length; i++)
-//        {
-//                if(numbers[i] > largetst)
-//                        largetst = numbers[i];
-//                else if (numbers[i] < smallest)
-//                        smallest = numbers[i];
-//               
-//        }
-//       
-//        System.out.println("Largest Number is : " + largetst);
-//        System.out.println("Smallest Number is : " + smallest);
+		String str = "anukulchandra";
+		char[] chararr=str.toCharArray();
 		
+		HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
 		
-//		String str = "nitin";
-//		String b="";
-//		
-//		for(int i=str.length()-1;i>=0;i--){
-//			
-//			b=b+str.charAt(i);
-//			//System.out.println("Reversed string is :" + str.charAt(i) );
-//		}
-//		
-//		if(str.equalsIgnoreCase(b)){
-//			System.out.println("Pallindrom");
-//		}
-		
-		for(;;){
-			
+		for(char c:chararr) {
+			if(hm.containsKey(c)) {
+				hm.put(c, hm.get(c)+1);
+			}
+			else {
+				hm.put(c, 1);
+			}
 		}
+		System.out.println(hm);
+		
+		
 		
 		
 		

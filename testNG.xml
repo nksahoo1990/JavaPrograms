@@ -5,7 +5,7 @@
        <run>
             
             <include name="Smoke" />
-            <exclude name="Regression"/>
+            <include name="Regression"/>
              
        </run>
      

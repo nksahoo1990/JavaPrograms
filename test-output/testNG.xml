@@ -1,12 +1,14 @@
 <suite name="Sample Suite">
   <test name="testing">
-  	<groups>
+  	<!-- <groups>
       <run>
         <include name="Smoke"/>
       </run>
-    </groups>
+    </groups> -->
     <classes>
-       <class name="SeleniumWebdriverExample.GroupsExamples" />
+       <!-- <class name="SeleniumWebdriverExample.GroupsExamples" /> -->
+       <class name="SeleniumWebdriverExample.AnnotationsTest" />
+       
     </classes>
   </test>
 </suite>

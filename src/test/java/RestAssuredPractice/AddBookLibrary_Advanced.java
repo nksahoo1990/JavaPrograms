@@ -31,6 +31,7 @@ public class AddBookLibrary_Advanced {
 		JsonPath j = ReusableMethods.rawToJson(responseString);
 		//Gets the value from json and kept in a string
 		String id = j.get("ID");
+		
 		System.out.println(id);
 	}
 

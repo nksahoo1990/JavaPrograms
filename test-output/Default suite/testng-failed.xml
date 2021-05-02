@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumWebdriverExample.GoogleChromeTest">
+      <class name="RestAssuredPractice.BasicPreemetiveAuthentication">
         <methods>
-          <include name="GCTest"/>
+          <include name="basicAuthTest"/>
         </methods>
-      </class> <!-- SeleniumWebdriverExample.GoogleChromeTest -->
+      </class> <!-- RestAssuredPractice.BasicPreemetiveAuthentication -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

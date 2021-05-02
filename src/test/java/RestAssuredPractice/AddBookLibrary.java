@@ -1,5 +1,8 @@
 package RestAssuredPractice;
 
+import static org.hamcrest.Matchers.equalTo;
+
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import RestAssuredFiles.ReusableMethods;
@@ -18,7 +21,7 @@ public class AddBookLibrary {
 		RestAssured.baseURI="http://216.10.245.166";
 		
 		Response responseString =given().
-		body("{\r\n\r\n\"name\":\"Krushna Boook\",\r\n\"isbn\":\"APKAA\",\r\n\"aisle\":\"1935\",\r\n\"author\":\"Cena Sahoo\"\r\n}\r\n").
+		body("{\r\n\r\n\"name\":\"Krushna Boook\",\r\n\"isbn\":\"DXYA\",\r\n\"aisle\":\"1015\",\r\n\"author\":\"Cena Sahoo\"\r\n}\r\n").
 		when().post("/Library/Addbook.php").
 		then().assertThat().statusCode(200).
 		extract().response();
@@ -26,8 +29,9 @@ public class AddBookLibrary {
 		String id = j.get("ID");
 		System.out.println(id);
 		
-		
-		
+		System.out.println("Response time is:  "+responseString.getTime());
+		System.out.println("Response body is:  "+responseString.body().asString());
+	
 	}
 
 }

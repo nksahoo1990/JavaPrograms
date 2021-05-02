@@ -2,6 +2,9 @@ package JavaArrayList;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
 
 public class demo {
 
@@ -9,37 +12,48 @@ public class demo {
 		// TODO Auto-generated method stub
 
 		ArrayList<String> al = new ArrayList<String>();
-		al.add("a");
-		al.add("ab");
-		al.add("abc");
+		al.add("Bawaluuu");
+		al.add("Kumuti");
+		al.add("Gaji");
+		al.add("Booooby");
 		
 		ArrayList<String> al1 = new ArrayList<String>();
-		al.add("z");
-		al.add("cv");
-		al.add("rty");
+		al1.add("Mama");
+		al1.add("Pakudi");
+		al1.add("Nitu");
 		
-		ArrayList<Integer> kk = new ArrayList<Integer>();
-		kk.add(1);
-		kk.add(4);
+		al.addAll(al1);
+		//al.addAll(1,al1);
 		
-		al.remove(0);
-		al.set(1, "xz");
-		System.out.println(Collections.max(kk));
-		
-		Collections.copy(al, al1);
-		
-		
-		
-		for(String str:al){
-			System.out.println(str);
+		/*for(int i=0;i<al.size();i++) {
+			System.out.println(al.get(i));
+		}*/
+		al.set(2, "Abu");
+		//List sublt=al.subList(2, 5);
+	
+		//al.remove("Nitu");
+		ListIterator itr =al.listIterator();
+		while(itr.hasNext()) {
+			System.out.println("next element is : " + itr.next());
 		}
+		boolean res = al.contains("Mama");
 		
+		System.out.println(res);
 		
-		Collections.sort(kk);
-		for(Integer str:kk){
-			System.out.println(str);
-		}
+		/*while(itr.hasPrevious()) {
+			System.out.println("backward :" + itr.previous());
+		}*/
 		
+		ArrayList<Integer> al2 = new ArrayList();
+		al2.add(1);
+		al2.add(50);
+		al2.add(7);
+		
+		System.out.println(Collections.max(al2));
+		System.out.println(Collections.min(al2));
+		
+		al2.remove(1);
+		System.out.println(Collections.max(al2));
 	}
 
 }

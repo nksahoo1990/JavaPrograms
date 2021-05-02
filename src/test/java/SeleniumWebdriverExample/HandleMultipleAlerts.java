@@ -24,9 +24,10 @@ public class HandleMultipleAlerts {
 		try{
 		WebDriver driver = null;
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.alertIsPresent());
+		org.openqa.selenium.Alert al =wait.until(ExpectedConditions.alertIsPresent());
+		/*wait.until(ExpectedConditions.alertIsPresent());
 		org.openqa.selenium.Alert al =  driver.switchTo().alert();
-		al.accept();
+		al.accept();*/
 		} catch(Exception e){
 			
 		}

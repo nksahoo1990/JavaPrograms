@@ -26,9 +26,10 @@ public class ParallelExecution {
 			driver = new FirefoxDriver();
 		} else if(browserName.equalsIgnoreCase("GC")){
 			System.setProperty("webdriver.chrome.driver",
-					"D:/chromedriver.exe");
+					"C:\\Users\\Nitya Krushna Sahoo\\Selenium Stuff\\chromedriver_win32\\chromedriver.exe");
 			driver = new ChromeDriver();
-		}else if(browserName.equalsIgnoreCase("IE")){
+		}
+		else if(browserName.equalsIgnoreCase("IE")){
 		
 			System.setProperty("webdriver.ie.driver",
 					"D:/IEDriverServer.exe");
